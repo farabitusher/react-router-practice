@@ -1,0 +1,19 @@
+.nav-area{
+    background-color:gray;
+    padding: 15px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: 20px;
+} 
+nav a:hover{
+    color: orangered;
+}
+nav .active{
+    color:orange
+}

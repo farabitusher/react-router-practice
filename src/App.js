@@ -6,11 +6,13 @@ import About from './Components/About/About';
 import NotFound from './Components/Not found/NotFound';
 import Header from './Components/Header/Header';
 import Friends from './Components/Friends/Friends';
+import Blogs from './Components/Blogs/Blogs';
 
 function App() {
   return (
     <div className="App">
      <Header></Header>
+     <Blogs></Blogs>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />

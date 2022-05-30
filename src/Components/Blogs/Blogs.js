@@ -6,6 +6,7 @@ import './Blogs.css'
 
 const Blogs = () => {
     const [blogs,setBlogs]=useState([])
+    console.log(blogs);
     useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/posts')
         .then(res=>res.json())
@@ -26,10 +27,13 @@ const Blogs = () => {
             <section>
             {
                 blogs.map(blog=>{
-                    const {id,title} =blog
+                    const {id,title,body,userId} =blog
+                    console.log(id);
                     return <article key={id}>
-                        <p className='title-blog'> Title: {truncateStr(title,100)}</p>
-                        <Link to={id}>Learn More</Link>
+                        <p className='title'>Title : {title}</p>
+                        <p className='title-blog'> Title: {truncateStr(body,100)}</p>
+                        <Link to={title}>Learn More</Link>
+                        <Link to='/'>Home</Link>
                     </article>
                 })
             }

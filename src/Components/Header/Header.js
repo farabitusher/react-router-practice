@@ -9,6 +9,7 @@ const Header = () => {
             <nav className='nav-area'>
                 
                 <NavLink to="./">Home</NavLink>
+                <NavLink to="./blogs">Blogs</NavLink>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/friends">Friends</NavLink>
                 
